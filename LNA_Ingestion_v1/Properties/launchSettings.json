@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "LNA_Ingestion_v1": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7182",
+      "launchBrowser": false
+    }
+  }
+}

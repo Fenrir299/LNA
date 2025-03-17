@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog.Extensions.AzureBlobStorage" Version="4.4.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.15" />
+    <PackageReference Include="NLog.WindowsIdentity" Version="5.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="nlog.example.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
