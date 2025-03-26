@@ -11,3 +11,17 @@
 /Users/l.giguet/Downloads/LNA_Ingestion_v1-master/GenAI.Common.Logging/obj/Debug/net8.0/refint/GenAI.Common.Logging.dll
 /Users/l.giguet/Downloads/LNA_Ingestion_v1-master/GenAI.Common.Logging/obj/Debug/net8.0/GenAI.Common.Logging.pdb
 /Users/l.giguet/Downloads/LNA_Ingestion_v1-master/GenAI.Common.Logging/obj/Debug/net8.0/ref/GenAI.Common.Logging.dll
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/bin/Debug/net8.0/nlog.example.config
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/bin/Debug/net8.0/GenAI.Common.Logging.deps.json
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/bin/Debug/net8.0/GenAI.Common.Logging.dll
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/bin/Debug/net8.0/GenAI.Common.Logging.pdb
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/GenAI.Common.Logging.csproj.AssemblyReference.cache
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/GenAI.Common.Logging.GeneratedMSBuildEditorConfig.editorconfig
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/GenAI.Common.Logging.AssemblyInfoInputs.cache
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/GenAI.Common.Logging.AssemblyInfo.cs
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/GenAI.Common.Logging.csproj.CoreCompileInputs.cache
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/GenAI.Common.Logging.sourcelink.json
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/GenAI.Common.Logging.dll
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/refint/GenAI.Common.Logging.dll
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/GenAI.Common.Logging.pdb
+/Users/l.giguet/Code/LNA/GenAI.Common.Logging/obj/Debug/net8.0/ref/GenAI.Common.Logging.dll
