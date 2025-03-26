@@ -26,9 +26,7 @@ namespace LNA_Ingestion_v1
         }
 
         [Function(nameof(LNA_Ingestion))]
-
-        // full-doc-lna-input A VOIR
-        public async Task Run([BlobTrigger("doc-lna-input/{name}", Connection = "STORAGE_ACCOUNT_CONNECTION_STRING")] byte[] blob, string name, Uri uri)
+        public async Task Run([BlobTrigger("full-doc-lna-input/{name}", Connection = "STORAGE_ACCOUNT_CONNECTION_STRING")] byte[] blob, string name, Uri uri)
         {
             // Coonversion des fcihiers word en PDF
             if (name.Split(".").Last() == "doc" || name.Split(".").Last() == "docx")
@@ -37,7 +35,7 @@ namespace LNA_Ingestion_v1
             
             try
             {
-                _logger.LogInformation($"Blob trigger function Processed blob \n Name:{name}");
+                _logger.LogDebug($"Blob trigger function Processed blob \n Name:{name}");
 
                 var memoryBuilder = new KernelMemoryBuilder()
                     .WithAzureOpenAITextGeneration(new AzureOpenAIConfig
@@ -78,7 +76,6 @@ namespace LNA_Ingestion_v1
 
                 memoryBuilder.Build();
                 var orchestrator = memoryBuilder.GetOrchestrator();
-
                 var partitionOptions = new TextPartitioningOptions
                 {
                     MaxTokensPerLine = 20,
@@ -94,9 +91,8 @@ namespace LNA_Ingestion_v1
 
                 //(ConstantHandlers.SaveRecordOP, uri, orchestrator));
 
-                _logger.LogInformation("=== DEB pipeline");
-                var pipeline = orchestrator.PrepareNewDocumentUpload(index: Environment.GetEnvironmentVariable("INDEX_NAME") ?? ""
-                    , documentId: name.Replace(".", ""), new TagCollection { { "Theme", "Book RH" } })
+                _logger.LogInformation("=== DEB pipeline ==>" + name);
+                var pipeline = orchestrator.PrepareNewDocumentUpload(index: Environment.GetEnvironmentVariable("INDEX_NAME") ?? "", documentId: name.Replace(".", ""), new TagCollection { { "Theme", "Book RH" } })
                     .AddUploadFile("file", name, blob)
                     .Then(ConstantHandlers.DocumentIntelligence)
                     .Then(ConstantHandlers.TextPartitionner)
@@ -106,11 +102,11 @@ namespace LNA_Ingestion_v1
 
                 await orchestrator.RunPipelineAsync(pipeline);
 
-                _logger.LogInformation("=== FIN pipeline");
+                _logger.LogInformation("=== FIN pipeline ==> " + name);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "ERREUR INGESTION" + ex.Message);
+                _logger.LogError(ex, "ERREUR INGESTION | " + name + " | " + ex.Message);
             }
         }
 

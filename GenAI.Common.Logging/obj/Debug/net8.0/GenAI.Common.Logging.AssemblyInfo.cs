@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GenAI.Common.Logging")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cdf5b0ceea50cfbf0dd8a2e0649d529c2b4dd57")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e6999c1f967e85fd68d0076a93d0bf29ce66c48")]
 [assembly: System.Reflection.AssemblyProductAttribute("GenAI.Common.Logging")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GenAI.Common.Logging")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
