@@ -1,0 +1,3 @@
+﻿Extrait uniquement le nom du contrat. Pas de phrases ou d'autres informations.
+La réponse ne doit comprendre uniquement le nom du contrat et rien d'autres.
+Résumé : {{$input}}

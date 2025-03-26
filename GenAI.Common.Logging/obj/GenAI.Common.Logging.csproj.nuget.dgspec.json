@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/l.giguet/Code/onepoint/LNA/GenAI.Common.Logging/GenAI.Common.Logging.csproj": {}
+    "/Users/l.giguet/Downloads/LNA_Ingestion_v1-master/GenAI.Common.Logging/GenAI.Common.Logging.csproj": {}
   },
   "projects": {
-    "/Users/l.giguet/Code/onepoint/LNA/GenAI.Common.Logging/GenAI.Common.Logging.csproj": {
+    "/Users/l.giguet/Downloads/LNA_Ingestion_v1-master/GenAI.Common.Logging/GenAI.Common.Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/l.giguet/Code/onepoint/LNA/GenAI.Common.Logging/GenAI.Common.Logging.csproj",
+        "projectUniqueName": "/Users/l.giguet/Downloads/LNA_Ingestion_v1-master/GenAI.Common.Logging/GenAI.Common.Logging.csproj",
         "projectName": "GenAI.Common.Logging",
-        "projectPath": "/Users/l.giguet/Code/onepoint/LNA/GenAI.Common.Logging/GenAI.Common.Logging.csproj",
+        "projectPath": "/Users/l.giguet/Downloads/LNA_Ingestion_v1-master/GenAI.Common.Logging/GenAI.Common.Logging.csproj",
         "packagesPath": "/Users/l.giguet/.nuget/packages/",
-        "outputPath": "/Users/l.giguet/Code/onepoint/LNA/GenAI.Common.Logging/obj/",
+        "outputPath": "/Users/l.giguet/Downloads/LNA_Ingestion_v1-master/GenAI.Common.Logging/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/l.giguet/.nuget/NuGet/NuGet.Config"
